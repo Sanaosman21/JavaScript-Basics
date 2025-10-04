@@ -39,4 +39,21 @@ function performOperation(secondInteger, secondDecimal, secondString) {
     // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
     
 }
+//Important notes 
+// Numeric conversion in mathematical functions and expressions happens automatically.
+let str = "123";
+alert(typeof str); // string
 
+let num = Number(str); // becomes a number 123
+
+alert(typeof num); // number
+
+// For example, when division / is applied to non-numbers:
+
+alert( "6" / "2" ); // 3, strings are converted to numbers
+//We can use the Number(value) function to explicitly convert a value to a number:
+
+// Value->Becomes…
+// undefined->NaN
+// null->0
+// true and false	1 and 0
