@@ -40,3 +40,54 @@ console.log( +true ); // 1
 console.log(+"")// No effect on numbers
 
 
+let apples = "2";
+let oranges = "3";
+
+alert( apples + oranges )//this gives you string but if yiu want to the sum the you need to convert them into integer and then sum
+console.log(+apple + +oranges )//5 here unary plus has an higher order precedence so first converts them into numbers and the add because addition + has lower precedencs than unary \
+
+//ASSIGNMENT OPERATOR
+//assignment operator have very low priority .
+let d=2*2+1//perform calculations first and then assign a value
+console.log(d)
+//chaining of assignmnets 
+let g,h,i
+g=h=i=2+2//gues the value of g,h,i
+//modify-in-place
+let n=5
+n+=5
+n*=5
+console.log(n)
+//modify and assign 
+n*=3+5//right part evaluated first
+ 
+//increment and decrement 
+counter=2
+counter++
+console.log(counter)
+//decrement
+counter=2
+counter--
+console.log(counter)
+//post increment and preincrement
+let counter = 1;
+alert( 2 * ++counter ); // 4
+let counter2= 1;
+alert( 2 * counter2 );
+counter2++;
+//Bitwise operators
+//1.comma 
+//The comma operator allows us to evaluate several expressions, dividing them with a comma ,. Each of them is evaluated but only the result of the last one is returned.
+let t = (1 + 2, 3 + 4);
+console.log(t)//comma has a very low precendence
+//comma throws away everything except the last expression than why do we need ?use it in more complex constructs to put several actions in one line
+
+// three operations in one line
+for (a = 1, b = 3, c = a * b; a < 10; a++);
+
+//key notes
+/**null becomes 0 after the numeric conversion and
+ undefined becomes nan  after the numeric conversion
+ "\t \n"-2=-2 #spaces becomes zero 
+ */
+
